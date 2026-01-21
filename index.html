@@ -102,6 +102,22 @@
       font-size: 1rem;
     }
 
+    .logo-circle {
+  width: 110px;
+  height: 110px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+
     /* ===== Contact form ===== */
     form {
       max-width: 600px;
@@ -145,7 +161,9 @@
 
   <!-- ===== Header ===== -->
   <header>
-    <img src="images/logo.png" alt="Company Logo">
+    <div class="logo-circle">
+      <img src="images/logo.png" alt="Company Logo">
+    </div>
     <h1>Your Company Slogan Here</h1>
     <nav>
       <a href="#about">About Us</a>
