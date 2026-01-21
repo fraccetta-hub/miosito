@@ -110,6 +110,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* ← BLOCCA l’uscita del logo */
 }
 
 
@@ -120,6 +121,13 @@
   height: auto;
 }
 
+.logo-circle img {
+  width: 65% !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  display: block;
+}
 
 
 
