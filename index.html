@@ -157,6 +157,27 @@
       padding: 30px 20px;
       background-color: var(--primary-color);
     }
+
+    /* ===== Contact info ===== */
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1rem;
+      }
+
+    /* ===== Mobile layout ===== */
+  @media (max-width: 600px) {
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      }
+    .contact-info .separator {
+      display: none;
+    }
+  }
+
+    
   </style>
 </head>
 <body>
@@ -214,7 +235,13 @@
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-    <p style="text-align:center; margin-top:20px;">Email: info@deepcablellc.com | Phone: +1 (307) 500-4112</p>
+    
+    <div class="contact-info">
+      <a href="mailto:info@deepcablellc.com">Email: info@deepcablellc.com</a>
+      <span class="separator"> | </span>
+      <a href="tel:+13075004112">Phone: +1 (307) 500-4112</a>
+    </div>
+
   </section>
 
   <!-- ===== Footer ===== -->
