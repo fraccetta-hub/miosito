@@ -102,17 +102,6 @@
       font-size: 1rem;
     }
 
-    .logo-circle {
-  width: clamp(90px, 18vw, 140px);
-  height: clamp(90px, 18vw, 140px);
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* ← BLOCCA l’uscita del logo */
-  margin-bottom: 10px;
-}
 
 
 .logo {
@@ -126,14 +115,6 @@
   justify-content: space-between;
 }
 
-.logo-circle img {
-  width: 100% !important;
-  height: auto !important;
-  max-width: none !important;
-  max-height: none !important;
-  display: block;
-  
-}
 
 .logo-container {
   display: flex;
@@ -185,7 +166,6 @@
 
   <!-- ===== Header ===== -->
   <header>
-    <div class="logo-container">
       <div class="logo-circle">
         <img src="images/logo.png" alt="Company Logo">
       </div>
